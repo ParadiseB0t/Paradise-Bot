@@ -22,7 +22,6 @@ npm install
 ```
 
 - Rename `.env.example` to `.env` and fill the values
-- Optionally edit `config.js`
 - After installation finishes type `npm run dev` to start the bot
 
 ## Features
