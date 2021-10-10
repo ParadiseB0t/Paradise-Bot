@@ -5,7 +5,7 @@
 > An awesome multipurpose discord bot build using [discord.js v13](https://discord.js.org) with support for slash commands and context menus
 > An awesome multipurpose discord bot build using [WOKCommands](https://github.com/AlexzanderFlores/WOKCommands) for a clean looking command handler
 
-> Demo Bot: [Invite Here](https://discord.com/oauth2/authorize?client_id=752922609733337190&permissions=397602323830&scope=bot%20applications.commands)
+> Demo Bot: [Invite Here](https://discord.com/oauth2/authorize?client_id=870778492999061524&scope=identify%20guilds%20bot%20applications.commands&permissions=7314341886)
 
 ## Requirements
 
