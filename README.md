@@ -39,4 +39,4 @@ Complete commands list can be found at the [Wiki](https://github.com/DevCynx/dis
 
 ## 🤝 Contributing
 
-- Feel free to [Fork](https://github.com/DevCynx/discord-js-botv13/fork) this repository, create a feature branch and submit a pull request
+- Feel free to [Fork](https://github.com/DevCynx/discord-js-bot-v13/fork) this repository, create a feature branch and submit a pull request
