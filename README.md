@@ -16,7 +16,7 @@
 ## 🚀 Getting Started
 
 ```
-git clone https://github.com/DevCynx/discord-js-bot-v13.git
+git clone https://github.com/DevCynx/canvas-discord-bot.git
 cd discord-js-bot
 npm install
 ```
