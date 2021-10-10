@@ -28,10 +28,11 @@ npm install
 ## Features
 
 - **Greeting**: Customizable welcome and farewell embeds
+- **Status-Changer**: Change your bots status without editing the code!
 
 ## Categories
 
-- Information: `ping`, `embed`, `test``
+- Information: `ping`, `embed`, `test`
 - Moderation: `kick`, `ban`
 - Testing: `simjoin`
 
