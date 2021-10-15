@@ -17,7 +17,7 @@
 
 ```
 git clone https://github.com/DevCynx/canvas-discord-bot-TS.git
-cd discord-js-bot
+cd canvas-discord-bot-TS
 npm install
 ```
 
