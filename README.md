@@ -1,4 +1,4 @@
-<img width="200" height="200" align="left" style="float: left; margin: 0 10px 0 0;" alt="Strange" src="https://cdn.discordapp.com/attachments/890664906997776500/896655691840909342/download_5.jpg?size=1024">
+<img width="200" height="200" align="left" style="float: left; margin: 0 10px 0 0;" alt="Canvas" src="https://cdn.discordapp.com/attachments/890664906997776500/896655691840909342/download_5.jpg?size=720">
 
 # Canvas 🤖
 
@@ -16,7 +16,7 @@
 ## 🚀 Getting Started
 
 ```
-git clone https://github.com/DevCynx/canvas-discord-bot.git
+git clone https://github.com/DevCynx/canvas-discord-bot-TS.git
 cd discord-js-bot
 npm install
 ```
@@ -35,8 +35,8 @@ npm install
 - Moderation: `kick`, `ban`
 - Testing: `simjoin`
 
-Complete commands list can be found at the [Wiki](https://github.com/DevCynx/discord-js-bot-v13/wiki)
+Complete commands list can be found at the [Wiki](https://github.com/DevCynx/canvas-discord-bot-TS/wiki)
 
 ## 🤝 Contributing
 
-- Feel free to [Fork](https://github.com/DevCynx/discord-js-bot-v13/fork) this repository, create a feature branch and submit a pull request
+- Feel free to [Fork](https://github.com/DevCynx/canvas-discord-bot-TS/fork) this repository, create a feature branch and submit a pull request
