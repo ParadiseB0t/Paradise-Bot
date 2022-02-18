@@ -2,7 +2,7 @@ import mongoose, { Schema } from 'mongoose'
 
 const reqString = {
     type: String,
-    equired: true,
+    required: true,
 }
 
 const schema = new Schema(
@@ -19,7 +19,7 @@ const schema = new Schema(
         },
     },
     {
-        timestamps: true,
+        timestamps:true,
     }
 )
 
