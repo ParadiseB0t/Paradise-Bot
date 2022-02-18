@@ -7,9 +7,11 @@ const client = new DiscordJS.Client({
   // These intents are recommended for the built in help menu
   intents: [
     Intents.FLAGS.GUILDS,
+    Intents.FLAGS.GUILD_BANS,
+    Intents.FLAGS.GUILD_INVITES,
+    Intents.FLAGS.GUILD_MEMBERS,
     Intents.FLAGS.GUILD_MESSAGES,
-    Intents.FLAGS.GUILD_MESSAGE_REACTIONS,
-    Intents.FLAGS.GUILD_PRESENCES,
+    Intents.FLAGS.GUILD_VOICE_STATES,
   ],
 })
 
