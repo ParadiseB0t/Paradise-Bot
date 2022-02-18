@@ -17,7 +17,7 @@
 
 ```
 git clone https://github.com/LoopyChimp/Pogy-discord-bot-TS.git
-cd canvas-discord-bot-TS
+cd Pogy-discord-bot-TS
 npm install
 ```
 
@@ -35,10 +35,11 @@ npm install
 - Api Examples: `get`, `post`, `delete`
 - Configuration: `Addrole`, `role`, `send`, `setwelcome`, `status`
 - Information: `ping`, `whois`
-- Moderation: `kick`, `ban`, `cc (Purge/ clear channel)`
+- Moderation: `kick`, `ban`, `cc (Purge/ clear channel)`, `mute`, `Warn System`
 - Testing: `embed`, `buton`
+- Utility: `Avatar`, `Banner`, `Color`, `CustomAvatar`
 
-Complete commands list can be found at the [Wiki](https://github.com/LoopyChimp/Pogy-discord-bot-TS/wiki)
+Complete commands list can be found at the [Wiki](https://github.com/LoopyChimp/Pogy-discord-bot-TS/wiki) (Soon)
 
 ## 🤝 Contributing
 
