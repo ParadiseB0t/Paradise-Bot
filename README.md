@@ -1,6 +1,6 @@
-<img width="200" height="200" align="left" style="float: left; margin: 0 10px 0 0;" alt="Canvas" src="https://cdn.discordapp.com/attachments/890664906997776500/896655691840909342/download_5.jpg?size=720">
+<img width="200" height="200" align="left" style="float: left; margin: 0 10px 0 0;" alt="Canvas" src="https://cdn.discordapp.com/avatars/870778492999061524/6da3d6e2b9ad80463fb18ae399599d8d.png?size=256">
 
-# Canvas 🤖
+# Pogy 🤖
 
 > An awesome multipurpose discord bot build using [discord.js v13](https://discord.js.org) with support for slash commands and context menus
 > An awesome multipurpose discord bot build using [WOKCommands](https://github.com/AlexzanderFlores/WOKCommands) for a clean looking command handler
