@@ -1,14 +1,14 @@
 {
-  "name": "brand-new-discord-bot-v13",
+  "name": "pogy-djs-v13",
   "version": "1.2.1",
-  "description": "",
+  "description": "<img width=\"200\" height=\"200\" align=\"left\" style=\"float: left; margin: 0 10px 0 0;\" alt=\"Canvas\" src=\"https://cdn.discordapp.com/avatars/870778492999061524/6da3d6e2b9ad80463fb18ae399599d8d.png?size=256\">",
   "main": "src/index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon src/index.ts"
   },
   "keywords": [],
-  "author": "",
+  "author": "LoopyChimp",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.26.0",
@@ -21,5 +21,13 @@
   },
   "devDependencies": {
     "typescript": "^4.4.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LoopyChimp/Pogy-discord-bot-TS.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LoopyChimp/Pogy-discord-bot-TS/issues"
+  },
+  "homepage": "https://github.com/LoopyChimp/Pogy-discord-bot-TS#readme"
 }
