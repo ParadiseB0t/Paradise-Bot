@@ -28,11 +28,12 @@ client.on('ready', () => {
     commandsDir: path.join(__dirname, 'commands'),
     featuresDir: path.join(__dirname, 'features'),
     typeScript: true,
-    testServers: ['899726939181445200'],
-    botOwners: ['513728046662942722'],
+    testServers: process.env.TEST_SERVER,
+    botOwners: process.env.BOT_OWNER,
     dbOptions,
     mongoUri: process.env.MONGO_URI
   })
+
   wok.on('databaseConnected', async (connection, state) => {
     const model = connection.models['wokcommands-languages']
   

@@ -1,20 +1,31 @@
-
+import {Client, Message,} from'discord.js';
 import { ICommand } from "wokcommands";
-import { MessageEmbed } from "discord.js";
 
-export default {
-    category: 'Information',
-    description: 'Gets the latency and api latency of the bot',
-    slash: 'both',
-    testOnly: true,
 
-    callback: async ({client, message, interaction}) => {
-        const lat = message ? `${Date.now() - message.createdTimestamp}ms` : `${Date.now() - interaction.createdTimestamp}ms`
-        const api = `${Math.round(client.ws.ping)}ms`
-        const embed = new MessageEmbed()
-            .setColor('GREYPLE')
-            .addField('Latency:', lat, true)
-            .addField('API:', api, true)
-            return embed
-    }
+    export default{
+        name: 'ping',
+        description: 'Fetches the client latency',
+        category: 'Utilities',
+    
+        slash: 'both',
+        testonly: true,
+    
+    
+        /** 
+         * @param {Client} client 
+         * @param {Message} message 
+         * @param {String[]} args 
+         */
+    
+         callback: async({ client, message, interaction, args }) => {
+            if (message) {
+                const msg = await message.channel.send ({content: `> 🏓 Pinging..`})
+                msg.edit({content: `> 🏓 Pong! Latency: **${client.ws.ping}ms**`})
+            }
+            else if (interaction) {
+                await interaction.reply({content: `> 🏓 Pinging..`});
+                interaction.editReply({content: `> 🏓 Pong! Latency: **${client.ws.ping}ms**`});
+            }
+        }
+
 } as ICommand
