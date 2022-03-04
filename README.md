@@ -23,23 +23,8 @@ npm install
 
 - Rename `.env.example` to `.env` and fill the values
 - After installation finishes type `npm run dev` to start the bot
+- Visit the wiki to understand the SRC folder better!  https://github.com/LoopyChimp/Pogy-discord-bot-TS/wiki
 
-## Features
-
-- **Greeting**: Customizable welcome and farewell embeds
-- **Status-Changer**: Change your bots status without editing the code!
-
-## Categories
-
-- Admin: `Simjoin`
-- Api Examples: `get`, `post`, `delete`
-- Configuration: `Addrole`, `role`, `send`, `setwelcome`, `status`
-- Information: `ping`, `whois`
-- Moderation: `kick`, `ban`, `cc (Purge/ clear channel)`, `mute`, `Warn System`
-- Testing: `embed`, `buton`
-- Utility: `Avatar`, `Banner`, `Color`, `CustomAvatar`
-
-Complete commands list can be found at the [Wiki](https://github.com/LoopyChimp/Pogy-discord-bot-TS/wiki) (Soon)
 
 ## 🤝 Contributing
 
