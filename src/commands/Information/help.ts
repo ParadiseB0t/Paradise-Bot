@@ -21,4 +21,4 @@ export default {
 
         return embed
     }
-} as ICommand    
+} as ICommand   
