@@ -27,6 +27,7 @@ export const discordTogether = new DiscordTogether(client);
     mongoUri: process.env.MONGO_URI,
     botOwners: process.env.BOT_OWNER,
   })
+    
 
   wok.on('databaseConnected', async (connection, state) => {
     const model = connection.models['wokcommands-languages']
