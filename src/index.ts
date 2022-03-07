@@ -1,6 +1,7 @@
 import DiscordJS, { Intents } from 'discord.js'
 import WOKCommands from 'wokcommands'
 import path from 'path'
+import { DiscordTogether } from "discord-together"
 import 'dotenv/config'
 
 const client = new DiscordJS.Client({
@@ -16,24 +17,17 @@ const client = new DiscordJS.Client({
   ],
 })
 
-client.on('ready', () => {
-  const dbOptions = {
-    // These are the default values
-    keepAlive: true,
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useFindAndModify: false
-  }
+export const discordTogether = new DiscordTogether(client);
 
   const wok = new WOKCommands(client, {
     commandsDir: path.join(__dirname, 'commands'),
     featuresDir: path.join(__dirname, 'features'),
     typeScript: true,
     testServers: process.env.TEST_SERVER,
+    mongoUri: process.env.MONGO_URI,
     botOwners: process.env.BOT_OWNER,
-    dbOptions,
-    mongoUri: process.env.MONGO_URI
   })
+    
 
   wok.on('databaseConnected', async (connection, state) => {
     const model = connection.models['wokcommands-languages']
@@ -41,6 +35,5 @@ client.on('ready', () => {
     const results = await model.countDocuments()
     console.log(results)
   })
-})
 
 client.login(process.env.TOKEN)

@@ -6,7 +6,7 @@ export default {
   
   slash: 'both', // Create both a slash and legacy command
   testOnly: false, // Only register a slash command for the testing guilds
-  ownerOnly:true,
+  ownerOnly: true,
   callback: ({ message, args }) => {
  try {
 	const code = args.join(" ");
