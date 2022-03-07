@@ -15,7 +15,9 @@ export default {
         .setTitle('Paradise Commands')
         .setURL ('http://paradisebot.xyz/')
         .setDescription("Coming Soon!")
-        .setFooter('Developed by: LoopyChimp#9679')
+        .setFooter({
+            text: "Developed by: LoopyChimp#9679"
+            })
 
         return embed
     }
