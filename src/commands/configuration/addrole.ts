@@ -12,7 +12,7 @@ export default {
     expectedArgs: '<channel> <messageId> <role>',
     expectedArgsTypes: ['CHANNEL', 'STRING', 'ROLE'],
 
-    slash: 'both',
+    slash: true,
     testOnly: false,
     guildOnly: true,
 

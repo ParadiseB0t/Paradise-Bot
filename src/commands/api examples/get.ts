@@ -11,7 +11,7 @@ export default {
     expectedArgs: '<id>',
     expectedArgsTypes: ['NUMBER'],
 
-    slash: 'both',
+    slash: true,
     testOnly: true,
 
     callback: async ({ args }) => {

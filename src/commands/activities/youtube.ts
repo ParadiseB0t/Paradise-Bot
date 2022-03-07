@@ -4,7 +4,7 @@ import { discordTogether } from "../..";
 export default {
 	category: "Activities",
 	aliases: ["yt"],
-	slash: "both",
+	slash: true,
 	description: "Launches watch together activity",
 	callback: async ({ message, interaction, client }) => {
 		let member: GuildMember;

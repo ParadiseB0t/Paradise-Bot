@@ -12,7 +12,7 @@ export default {
     minArgs: 2,
     expectedArgs: '<channel> <text>',
 
-    slash: 'both',
+    slash: true,
     testOnly: false,
 
     options: [

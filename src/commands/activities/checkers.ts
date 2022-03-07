@@ -3,7 +3,7 @@ import { ICommand } from "wokcommands";
 import { discordTogether } from "../..";
 export default {
 	description: "Launches checkers activity",
-	slash: "both",
+	slash: true,
 	category: "Activities",
 	callback: async ({ interaction, message, client }) => {
 		let member: GuildMember;

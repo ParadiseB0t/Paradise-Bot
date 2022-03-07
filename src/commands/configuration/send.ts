@@ -11,7 +11,7 @@ export default {
     expectedArgs: '<channel> <text>',
     expectedArgsTypes: ['CHANNEL', 'STRING'],
 
-    slash: 'both',
+    slash: true,
     testOnly: false,
     guildOnly: true,
 

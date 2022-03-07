@@ -4,7 +4,7 @@ export default {
     category: 'admin',
     description: 'Simulates a member joining',
 
-    slash: 'both',
+    slash: true,
     testOnly: false,
 
     callback:({ member, client }) => {

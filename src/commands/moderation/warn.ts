@@ -9,7 +9,7 @@ export default {
     permissions: ['ADMINISTRATOR'],
     requiredRoles: true,
 
-    slash: 'both',
+    slash: true,
     testOnly: false,
     guildOnly: true,
 

@@ -3,7 +3,7 @@ import { ICommand } from "wokcommands";
 import { discordTogether } from "../..";
 export default {
 	description: "Launches doodlecrew activity",
-	slash: "both",
+	slash: true,
 	category: "Activities",
 	aliases: ["doodle"],
 	callback: async ({ interaction, message, client }) => {

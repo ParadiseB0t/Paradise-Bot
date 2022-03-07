@@ -5,7 +5,7 @@ export default {
 	category: "Activities",
 	aliases: ["fish", "fishing"],
 	description: "Launches fishington activity",
-	slash: "both",
+	slash: true,
 	testOnly: true,
 	callback: async ({ message, interaction, client }) => {
 		let member: GuildMember = interaction

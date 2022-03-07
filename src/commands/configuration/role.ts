@@ -11,7 +11,7 @@ export default {
     minArgs: 3,
     expectedArgs: `<"${actions.join('", "')}"> <user @> <role @>`,
 
-    slash: 'both',
+    slash: true,
     testOnly: false,
     guildOnly: true,
 

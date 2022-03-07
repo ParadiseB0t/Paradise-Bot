@@ -7,7 +7,7 @@ export default {
 
     permissions: ['ADMINISTRATOR'], 
 
-    slash: 'both',
+    slash: true,
     testOnly: true,
 
     callback: async ({}) => {

@@ -19,7 +19,7 @@ export default{
 
 
 
-    slash: 'both',
+    slash: true,
     testOnly: false,
     
 
