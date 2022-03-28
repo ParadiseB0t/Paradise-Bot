@@ -1,6 +1,6 @@
 {
-  "name": "pogy-djs-v13",
-  "version": "2.2.0",
+  "name": "paradise-bot",
+  "version": "1.0.0",
   "description": "<img width=\"200\" height=\"200\" align=\"left\" style=\"float: left; margin: 0 10px 0 0;\" alt=\"Pogy\" src=\"https://cdn.discordapp.com/avatars/870778492999061524/6da3d6e2b9ad80463fb18ae399599d8d.png?size=256\">",
   "main": "src/index.ts",
   "scripts": {
@@ -8,7 +8,7 @@
     "dev": "nodemon src/index.ts"
   },
   "keywords": [],
-  "author": "LoopyChimp",
+  "authors": "LoopyChimp and Chopkeys",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.26.1",
@@ -25,10 +25,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LoopyChimp/Pogy-discord-bot-TS.git"
+    "url": "git+https://github.com/ParadiseB0t/Paradise-Bot.git"
   },
   "bugs": {
-    "url": "https://github.com/LoopyChimp/Pogy-discord-bot-TS/issues"
+    "url": "https://github.com/ParadiseB0t/Paradise-Bot/issues"
   },
-  "homepage": "https://github.com/LoopyChimp/Pogy-discord-bot-TS#readme"
+  "homepage": "https://github.com/ParadiseB0t/Paradise-Bot#readme"
 }
