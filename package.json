@@ -29,5 +29,9 @@
   "bugs": {
     "url": "https://github.com/ParadiseB0t/Paradise-Bot/issues"
   },
+<<<<<<< HEAD
   "homepage": "https://github.com/ParadiseB0t/Paradise-Bot/#readme"
+=======
+  "homepage": "https://github.com/ParadiseB0t/Paradise-Bot#readme"
+>>>>>>> a1ed1dec7e5071fb3555659fd2ce03b90f358421
 }
