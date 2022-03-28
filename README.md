@@ -22,9 +22,9 @@ cd Paradise-Bot
 npm install
 ```
 
-- Rename `.env.example` to `.env` and fill the values
+- Rename `config.example.ts` to `config.ts` and fill the values
 - After installation finishes type `npm run dev` to start the bot
-- Visit the wiki to understand the SRC folder better! https://github.com/ParadiseB0t/Paradise-Bot/wiki
+- Visit the wiki to understand the SRC folder better!  https://github.com/ParadiseB0t/Paradise-Bot/wiki
 
 
 ## 🤝 Contributing
