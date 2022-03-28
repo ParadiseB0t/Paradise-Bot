@@ -9,7 +9,7 @@ export default {
     maxArgs: 1,
     expectedArgs: '[amount]',
 
-    slash: 'both',
+    slash: true,
     testOnly: false,
 
     callback: async ({ message, interaction, channel, args }) => {

@@ -6,7 +6,7 @@ export default {
     description: 'info',
 
 
-    slash: 'both',
+    slash: true,
     testOnly: false,
     
 

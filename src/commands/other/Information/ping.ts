@@ -7,7 +7,7 @@ import { ICommand } from "wokcommands";
         description: 'Fetches the client latency',
         category: 'Utilities',
     
-        slash: 'both',
+        slash: true,
         testOnly: false,
     
     

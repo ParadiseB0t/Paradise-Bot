@@ -1,11 +1,10 @@
-import { GuildMember, Invite, MessageEmbed, Snowflake } from "discord.js";
+import { GuildMember, MessageEmbed, Snowflake } from "discord.js";
 import { ICommand } from "wokcommands";
-import { discordTogether } from "../..";
+import { discordTogether } from "../../..";
 export default {
+	description: "Launches chess activity",
+	slash: true,
 	category: "Activities",
-	slash: "both",
-	aliases: ["amogus"],
-	description: "Launches betrayal activity",
 	callback: async ({ interaction, message, client }) => {
 		let member: GuildMember;
 		let channelID: Snowflake = "";
@@ -20,9 +19,9 @@ export default {
 		});
 		if (member.voice.channel) {
 			channelID = member.voice.channelId as Snowflake;
-			invite = await discordTogether.createTogetherCode(channelID, "betrayal");
+			invite = await discordTogether.createTogetherCode(channelID, "chess");
 			let embed = new MessageEmbed()
-				.setColor("RED")
+				.setColor("NOT_QUITE_BLACK")
 				.setAuthor({
 					name: client.user!.username,
 					iconURL: client.user!.displayAvatarURL({
@@ -31,7 +30,7 @@ export default {
 					}),
 				})
 				.addField(
-					"Betrayal",
+					"Chess In The Park",
 					`Acitivity launched in <#${channelID}>. Press [here](${invite.code})`
 				);
 			return embed;

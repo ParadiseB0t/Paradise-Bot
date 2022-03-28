@@ -1,11 +1,11 @@
 import { GuildMember, MessageEmbed, Snowflake } from "discord.js";
 import { ICommand } from "wokcommands";
-import { discordTogether } from "../..";
+import { discordTogether } from "../../..";
 export default {
 	category: "Activities",
 	aliases: ["fish", "fishing"],
 	description: "Launches fishington activity",
-	slash: "both",
+	slash: true,
 	testOnly: true,
 	callback: async ({ message, interaction, client }) => {
 		let member: GuildMember = interaction

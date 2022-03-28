@@ -13,7 +13,7 @@ export default {
     expectedArgs: '<user> <duration> <reason>',
     expectedArgsTypes: ['USER', 'STRING', 'STRING'],
 
-    slash: 'both',
+    slash: true,
     testOnly: false,
 
     callback: async ({

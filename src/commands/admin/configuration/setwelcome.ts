@@ -1,6 +1,6 @@
 import DJS from 'discord.js'
 import { ICommand } from "wokcommands";
-import welcomeSchema from "../../models/welcome-schema"
+import welcomeSchema from "../../../models/welcome-schema"
 
 
 export default {
@@ -12,7 +12,7 @@ export default {
     minArgs: 2,
     expectedArgs: '<channel> <text>',
 
-    slash: 'both',
+    slash: true,
     testOnly: false,
 
     options: [

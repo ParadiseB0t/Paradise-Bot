@@ -1,11 +1,11 @@
 import DiscordJS, { Intents } from 'discord.js'
 import WOKCommands from 'wokcommands'
 import path from 'path'
+import { config } from '../config/config'
 import { DiscordTogether } from "discord-together"
-import 'dotenv/config'
+
 
 const client = new DiscordJS.Client({
-  // These intents are recommended for the built in help menu
   intents: [
     Intents.FLAGS.GUILDS,
     Intents.FLAGS.GUILD_BANS,
@@ -19,21 +19,21 @@ const client = new DiscordJS.Client({
 
 export const discordTogether = new DiscordTogether(client);
 
-  const wok = new WOKCommands(client, {
-    commandsDir: path.join(__dirname, 'commands'),
-    featuresDir: path.join(__dirname, 'features'),
-    typeScript: true,
-    testServers: process.env.TEST_SERVER,
-    mongoUri: process.env.MONGO_URI,
-    botOwners: process.env.BOT_OWNER,
-  })
-    
 
-  wok.on('databaseConnected', async (connection, state) => {
-    const model = connection.models['wokcommands-languages']
+client.on('ready', () => {
+  new WOKCommands(client, {
+      commandsDir: path.join(__dirname, "commands"),
+      typeScript: true,
+      mongoUri: config.MONGO_URI,
+      dbOptions: {
+          keepAlive: true
+      },
+      botOwners: config.BOT_OWNER,
+      testServers: config.TEST_SERVER
+  })
+  .setDefaultPrefix(config.defaultPrefix)
+  .setColor(0x00FF00)
+}) 
   
-    const results = await model.countDocuments()
-    console.log(results)
-  })
 
-client.login(process.env.TOKEN)
+client.login(config.TOKEN)

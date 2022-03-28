@@ -6,7 +6,7 @@ export default {
     description: 'Sends the command list',
 
 
-    slash: 'both',
+    slash: true,
     testOnly: false,
     
 

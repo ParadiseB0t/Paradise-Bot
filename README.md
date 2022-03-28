@@ -17,16 +17,20 @@
 ## 🚀 Getting Started
 
 ```
+
+git clone https://github.com/ParadiseB0t/Paradise-Bot.git
+
 git clone https://github.com/ParadiseB0t/Paradise-Bot
+
 cd Paradise-Bot
 npm install
 ```
 
-- Rename `.env.example` to `.env` and fill the values
+- Rename `config.example.ts` to `config.ts` and fill the values
 - After installation finishes type `npm run dev` to start the bot
-- Visit the wiki to understand the SRC folder better!  https://github.com/LoopyChimp/Pogy-discord-bot-TS/wiki
+- Visit the wiki to understand the SRC folder better!  https://github.com/ParadiseB0t/Paradise-Bot/wiki
 
 
 ## 🤝 Contributing
 
-- Feel free to [Fork](https://github.com/LoopyChimp/Pogy-discord-bot-TS/fork) this repository, create a feature branch and submit a pull request
+- Feel free to [Fork](https://github.com/ParadiseB0t/Paradise-Bot/fork) this repository, create a feature branch and submit a pull request
