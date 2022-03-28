@@ -1,6 +1,6 @@
 import DJS from 'discord.js'
 import { ICommand } from "wokcommands";
-import welcomeSchema from "../../models/welcome-schema"
+import welcomeSchema from "../../../models/welcome-schema"
 
 
 export default {
