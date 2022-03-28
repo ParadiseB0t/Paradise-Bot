@@ -1,6 +1,6 @@
 import { GuildMember, MessageEmbed, Snowflake } from "discord.js";
 import { ICommand } from "wokcommands";
-import { discordTogether } from "../..";
+import { discordTogether } from "../../..";
 export default {
 	description: "Launches chess activity",
 	slash: true,

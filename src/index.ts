@@ -6,7 +6,6 @@ import { DiscordTogether } from "discord-together"
 
 
 const client = new DiscordJS.Client({
-  // These intents are recommended for the built in help menu
   intents: [
     Intents.FLAGS.GUILDS,
     Intents.FLAGS.GUILD_BANS,
@@ -20,7 +19,8 @@ const client = new DiscordJS.Client({
 
 export const discordTogether = new DiscordTogether(client);
 
-client.once('ready', () => {
+
+client.on('ready', () => {
   new WOKCommands(client, {
       commandsDir: path.join(__dirname, "commands"),
       typeScript: true,
@@ -33,6 +33,7 @@ client.once('ready', () => {
   })
   .setDefaultPrefix(config.defaultPrefix)
   .setColor(0x00FF00)
-})
+}) 
+  
 
 client.login(config.TOKEN)

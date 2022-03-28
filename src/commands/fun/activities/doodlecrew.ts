@@ -1,12 +1,12 @@
 import { GuildMember, MessageEmbed, Snowflake } from "discord.js";
 import { ICommand } from "wokcommands";
-import { discordTogether } from "../..";
+import { discordTogether } from "../../..";
 export default {
-	category: "Activities",
-	aliases: ["yt"],
+	description: "Launches doodlecrew activity",
 	slash: true,
-	description: "Launches watch together activity",
-	callback: async ({ message, interaction, client }) => {
+	category: "Activities",
+	aliases: ["doodle"],
+	callback: async ({ interaction, message, client }) => {
 		let member: GuildMember;
 		let channelID: Snowflake = "";
 		let invite: any;
@@ -20,9 +20,12 @@ export default {
 		});
 		if (member.voice.channel) {
 			channelID = member.voice.channelId as Snowflake;
-			invite = await discordTogether.createTogetherCode(channelID, "youtube");
+			invite = await discordTogether.createTogetherCode(
+				channelID,
+				"doodlecrew"
+			);
 			let embed = new MessageEmbed()
-				.setColor("RED")
+				.setColor("#fde52a")
 				.setAuthor({
 					name: client.user!.username,
 					iconURL: client.user!.displayAvatarURL({
@@ -31,7 +34,7 @@ export default {
 					}),
 				})
 				.addField(
-					"Watch Together",
+					"Sketch Heads",
 					`Acitivity launched in <#${channelID}>. Press [here](${invite.code})`
 				);
 			return embed;

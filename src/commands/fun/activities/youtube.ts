@@ -1,12 +1,12 @@
-import { GuildMember, Invite, MessageEmbed, Snowflake } from "discord.js";
+import { GuildMember, MessageEmbed, Snowflake } from "discord.js";
 import { ICommand } from "wokcommands";
-import { discordTogether } from "../..";
+import { discordTogether } from "../../..";
 export default {
 	category: "Activities",
+	aliases: ["yt"],
 	slash: true,
-	aliases: ["amogus"],
-	description: "Launches betrayal activity",
-	callback: async ({ interaction, message, client }) => {
+	description: "Launches watch together activity",
+	callback: async ({ message, interaction, client }) => {
 		let member: GuildMember;
 		let channelID: Snowflake = "";
 		let invite: any;
@@ -20,7 +20,7 @@ export default {
 		});
 		if (member.voice.channel) {
 			channelID = member.voice.channelId as Snowflake;
-			invite = await discordTogether.createTogetherCode(channelID, "betrayal");
+			invite = await discordTogether.createTogetherCode(channelID, "youtube");
 			let embed = new MessageEmbed()
 				.setColor("RED")
 				.setAuthor({
@@ -31,7 +31,7 @@ export default {
 					}),
 				})
 				.addField(
-					"Betrayal",
+					"Watch Together",
 					`Acitivity launched in <#${channelID}>. Press [here](${invite.code})`
 				);
 			return embed;

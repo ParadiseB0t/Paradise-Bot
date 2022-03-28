@@ -1,11 +1,10 @@
 import { GuildMember, MessageEmbed, Snowflake } from "discord.js";
 import { ICommand } from "wokcommands";
-import { discordTogether } from "../..";
+import { discordTogether } from "../../..";
 export default {
-	description: "Launches doodlecrew activity",
+	description: "Launches checkers activity",
 	slash: true,
 	category: "Activities",
-	aliases: ["doodle"],
 	callback: async ({ interaction, message, client }) => {
 		let member: GuildMember;
 		let channelID: Snowflake = "";
@@ -20,12 +19,9 @@ export default {
 		});
 		if (member.voice.channel) {
 			channelID = member.voice.channelId as Snowflake;
-			invite = await discordTogether.createTogetherCode(
-				channelID,
-				"doodlecrew"
-			);
+			invite = await discordTogether.createTogetherCode(channelID, "checkers");
 			let embed = new MessageEmbed()
-				.setColor("#fde52a")
+				.setColor("NOT_QUITE_BLACK")
 				.setAuthor({
 					name: client.user!.username,
 					iconURL: client.user!.displayAvatarURL({
@@ -34,7 +30,7 @@ export default {
 					}),
 				})
 				.addField(
-					"Sketch Heads",
+					"Checkers In The Park",
 					`Acitivity launched in <#${channelID}>. Press [here](${invite.code})`
 				);
 			return embed;
