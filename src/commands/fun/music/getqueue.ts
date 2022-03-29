@@ -25,7 +25,7 @@ export default {
         embed = new MessageEmbed()
         .setColor('#ff0000')
         .setTitle('Music Stopped')
-        .setDescription(`The current queue for ${channel} is ${queue}`)
+        .setDescription(`The current queue for ${channel?.name} is ${queue}`)
 
         return (embed)
     }
