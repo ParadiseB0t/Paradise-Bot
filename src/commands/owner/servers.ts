@@ -3,7 +3,8 @@ import { ICommand } from "wokcommands";
 export default {
 	description: "shows all the servers the bot is in",
 	category: "Owner",
-	slash: false,
+	slash: true,
+	testOnly: true,
 	ownerOnly: true,
 	hidden: true,
 	callback: ({ message, client }) => {

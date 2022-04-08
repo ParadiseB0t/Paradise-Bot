@@ -6,13 +6,18 @@ export default {
   description: 'Dms a specified user!', // Required for slash commands
   
   slash: 'both', // Create both a slash and legacy command
-  testOnly: false, // Only register a slash command for the testing guilds
+  testOnly: true,
+  ownerOnly: true, 
+  hidden: true,
 
   permissions: ['MANAGE_MESSAGES'],
 
-  
-  
-  callback: ({ message, client, args }) => {	
+  minArgs: 2,
+  expectedArgs: '<user> <content>',
+  expectedArgsTypes: ['USER', 'STRING'],
+
+ 
+  callback: ({ message, client, args, interaction }) => {	
 
 	let user =
 	message.mentions.users.first() ||
@@ -28,8 +33,5 @@ export default {
 	user.send(`${args.slice(1).join(" ")}`)
 	.catch(() => message.channel.send("That user could not be DMed!"))
 	.then(() => message.channel.send(`Sent a message to ${user!.tag}`));
-	    
-	
-
-  },
+	  },
 } as ICommand
