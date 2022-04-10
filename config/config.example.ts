@@ -1,7 +1,11 @@
 export const config = {
-    "TOKEN": "Bot Token Here",
-    "MONGO_URI": "MongoDB URI Here",
+    "TOKEN": "",
+    "MONGO_URI": "",
     "BOT_OWNER": [""],
-    "TEST_SERVER": [""],
-    "defaultPrefix": "t!"
+    "TEST_SERVER": [],
+    "defaultPrefix": "p!",
+    "globalDailyMoney": "100",
+    "guildDailyMoney": "100",
+    "currency": "$",
+    "version": "1.2.0",
 }
