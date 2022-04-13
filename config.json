@@ -1,0 +1,10 @@
+{
+    "token": "",
+    "mongooseConnectionString": "",
+    
+	"guildId": "",
+
+    "colors": {
+        "embed": "#2f3136"
+    }
+}
